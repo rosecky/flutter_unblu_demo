@@ -1,0 +1,694 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LiveKit",
+        "printedName": "LiveKit",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Promises",
+        "printedName": "Promises",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "LiveKit",
+        "printedName": "LiveKit",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "UnbluCoreSDK",
+        "printedName": "UnbluCoreSDK",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "LiveKit",
+        "printedName": "LiveKit",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LiveKit",
+        "printedName": "LiveKit",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Accelerate",
+        "printedName": "Accelerate",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "libyuv",
+        "printedName": "libyuv",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LiveKit",
+        "printedName": "LiveKit",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "UnbluCoreSDK",
+        "printedName": "UnbluCoreSDK",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "VideoToolbox",
+        "printedName": "VideoToolbox",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "UnbluLiveKitCallModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Participant",
+        "printedName": "Participant",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isVideoAvailble",
+            "printedName": "isVideoAvailble()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7LiveKit11ParticipantC05UnbluaB10CallModuleE15isVideoAvailbleSbyF",
+            "mangledName": "$s7LiveKit11ParticipantC05UnbluaB10CallModuleE15isVideoAvailbleSbyF",
+            "moduleName": "UnbluLiveKitCallModule",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isAudioAvailble",
+            "printedName": "isAudioAvailble()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7LiveKit11ParticipantC05UnbluaB10CallModuleE15isAudioAvailbleSbyF",
+            "mangledName": "$s7LiveKit11ParticipantC05UnbluaB10CallModuleE15isAudioAvailbleSbyF",
+            "moduleName": "UnbluLiveKitCallModule",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@LiveKit@objc(cs)Participant",
+        "mangledName": "$s7LiveKit11ParticipantC",
+        "moduleName": "LiveKit",
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Loggable",
+            "printedName": "Loggable",
+            "usr": "s:7LiveKit8LoggableP",
+            "mangledName": "$s7LiveKit8LoggableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIImage",
+        "printedName": "UIImage",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "resized",
+            "printedName": "resized(to:scale:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So7UIImageC22UnbluLiveKitCallModuleE7resized2to5scaleABSo6CGSizeV_14CoreFoundation7CGFloatVtF",
+            "mangledName": "$sSo7UIImageC22UnbluLiveKitCallModuleE7resized2to5scaleABSo6CGSizeV_12CoreGraphics7CGFloatVtF",
+            "moduleName": "UnbluLiveKitCallModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIImage",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIImage",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByImageLiteral",
+            "printedName": "_ExpressibleByImageLiteral",
+            "usr": "s:s26_ExpressibleByImageLiteralP",
+            "mangledName": "$ss26_ExpressibleByImageLiteralP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CGImage",
+        "printedName": "CGImage",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(pixelBuffer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGImage",
+                    "printedName": "CoreGraphics.CGImage",
+                    "usr": "c:@T@CGImageRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CVBuffer",
+                "printedName": "CoreVideo.CVBuffer",
+                "usr": "c:@T@CVBufferRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So10CGImageRefa22UnbluLiveKitCallModuleE6create11pixelBufferABSgSo08CVBufferB0a_tFZ",
+            "mangledName": "$sSo10CGImageRefa22UnbluLiveKitCallModuleE6create11pixelBufferABSgSo08CVBufferB0a_tFZ",
+            "moduleName": "UnbluLiveKitCallModule",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@T@CGImageRef",
+        "moduleName": "CoreGraphics",
+        "declAttributes": [
+          "SynthesizedProtocol",
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_CFObject",
+            "printedName": "_CFObject",
+            "usr": "s:14CoreFoundation9_CFObjectP",
+            "mangledName": "$s14CoreFoundation9_CFObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/capturer\/CustomFilterCapturer.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 11,
+      "value": "\"local-ios\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/pip\/PiPController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1046,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/pip\/PiPController.swift",
+      "kind": "StringLiteral",
+      "offset": 569,
+      "length": 13,
+      "value": "\"UnbluLiveKitCallModule.PiPController\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/capturer\/DepthCameraCapturer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 235,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/capturer\/DepthCameraCapturer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 235,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/capturer\/DepthCameraCapturer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 235,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/capturer\/DepthCameraCapturer.swift",
+      "kind": "StringLiteral",
+      "offset": 472,
+      "length": 18,
+      "value": "\"video data queue\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/capturer\/DepthCameraCapturer.swift",
+      "kind": "Array",
+      "offset": 731,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/capturer\/DepthCameraCapturer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 889,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/capturer\/DepthCameraCapturer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1540,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/capturer\/DepthCameraCapturer.swift",
+      "kind": "StringLiteral",
+      "offset": 330,
+      "length": 19,
+      "value": "\"UnbluLiveKitCallModule.DepthCameraCapturer\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/pip\/PiPViewRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 346,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/pip\/PiPViewRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 566,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/pip\/PiPViewRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 727,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/LiveKitProvider.swift",
+      "kind": "Dictionary",
+      "offset": 475,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/LiveKitProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 253,
+      "length": 15,
+      "value": "\"UnbluLiveKitCallModule.LiveKitProvider\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluLiveKitCallModule\/UnbluLiveKitCallModule\/com.unblu.unblu-livekit-call-module\/internal\/provider\/capturer\/SegmentationFilter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2572,
+      "length": 1,
+      "value": "1"
+    }
+  ]
+}

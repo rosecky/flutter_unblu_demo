@@ -1,0 +1,4 @@
+framework module UnbluOpenTokCallModule {
+  header "UnbluOpenTokCallModule-Swift.h"
+  requires objc
+}

@@ -1,0 +1,11 @@
+framework module UnbluFirebaseNotificationModule {
+  umbrella header "UnbluFirebaseNotificationModule.h"
+
+  export *
+  module * { export * }
+}
+
+module UnbluFirebaseNotificationModule.Swift {
+  header "UnbluFirebaseNotificationModule-Swift.h"
+  requires objc
+}

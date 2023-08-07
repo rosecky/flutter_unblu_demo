@@ -1,0 +1,49 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnbluCallKitModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CallKit",
+        "printedName": "CallKit",
+        "declKind": "Import",
+        "moduleName": "UnbluCallKitModule"
+      },
+      {
+        "kind": "Import",
+        "name": "PushKit",
+        "printedName": "PushKit",
+        "declKind": "Import",
+        "moduleName": "UnbluCallKitModule"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UnbluCallKitModule"
+      },
+      {
+        "kind": "Import",
+        "name": "UnbluCoreSDK",
+        "printedName": "UnbluCoreSDK",
+        "declKind": "Import",
+        "moduleName": "UnbluCallKitModule"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

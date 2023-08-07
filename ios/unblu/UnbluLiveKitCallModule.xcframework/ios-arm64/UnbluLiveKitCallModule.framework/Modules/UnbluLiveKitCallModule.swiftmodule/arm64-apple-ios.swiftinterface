@@ -1,0 +1,32 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UnbluLiveKitCallModule
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVKit
+import Accelerate
+import Combine
+import CoreGraphics
+import CoreImage
+import CoreMedia
+import Foundation
+import LiveKit
+import Promises
+import Swift
+import UIKit
+import UnbluCoreSDK
+import VideoToolbox
+import Vision
+import WebRTC
+import _Concurrency
+import _StringProcessing
+import libyuv
+extension LiveKit.Participant {
+  public func isVideoAvailble() -> Swift.Bool
+  public func isAudioAvailble() -> Swift.Bool
+}
+extension UIKit.UIImage {
+  public func resized(to newSize: CoreFoundation.CGSize, scale: CoreFoundation.CGFloat = 1) -> UIKit.UIImage
+}
+extension CoreGraphics.CGImage {
+  public static func create(pixelBuffer: CoreVideo.CVPixelBuffer) -> CoreGraphics.CGImage?
+}

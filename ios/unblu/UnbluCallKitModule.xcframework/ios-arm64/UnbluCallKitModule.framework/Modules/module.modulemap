@@ -1,0 +1,4 @@
+framework module UnbluCallKitModule {
+  header "UnbluCallKitModule-Swift.h"
+  requires objc
+}

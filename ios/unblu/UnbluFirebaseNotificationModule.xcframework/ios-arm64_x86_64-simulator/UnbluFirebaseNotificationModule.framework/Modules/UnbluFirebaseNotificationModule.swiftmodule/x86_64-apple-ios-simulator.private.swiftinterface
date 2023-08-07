@@ -1,0 +1,47 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UnbluFirebaseNotificationModule
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import FirebaseCore
+import FirebaseMessaging
+import Foundation
+import Swift
+import UIKit
+import UnbluCoreSDK
+@_exported import UnbluFirebaseNotificationModule
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+@objc public protocol UnbluFirebaseNotificationCoordinatorDelegate {
+  @objc func unbluFirebaseNotificationCoordinator(_ unbluFirebaseNotificationCoordinator: UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinator, didReceiveRegistrationToken token: Swift.String?)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class UnbluFirebaseNotificationCoordinator : ObjectiveC.NSObject {
+  weak public var delegate: UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinatorDelegate?
+  @objc override convenience dynamic public init()
+  @objc deinit
+}
+extension UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinator {
+  public func handleInitialRemoteNotification(userInfo: [Swift.AnyHashable : Any]?) throws
+  public func handleRemoteNotification(userInfo: [Swift.AnyHashable : Any], completionHandler: @escaping (UIKit.UIBackgroundFetchResult) -> Swift.Void) throws
+  public func handleRemoteNotification(userInfo: [Swift.AnyHashable : Any]) throws
+  public func failedToRegisterForRemoteNotifications(error: Swift.Error)
+  public func setDeviceToken(_ deviceToken: Swift.String?)
+}
+extension UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinator : FirebaseMessaging.MessagingDelegate {
+  @objc dynamic public func messaging(_ messaging: FirebaseMessaging.Messaging, didReceiveRegistrationToken fcmToken: Swift.String?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UnbluFirebaseUIApplicationDelegate : UIKit.UIResponder, UIKit.UIApplicationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc public var window: UIKit.UIWindow?
+  @_Concurrency.MainActor(unsafe) @objc open func application(_ application: UIKit.UIApplication, didFinishLaunchingWithOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func application(_ application: UIKit.UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, didReceiveRemoteNotification userInfo: [Swift.AnyHashable : Any])
+  @_Concurrency.MainActor(unsafe) @objc public func application(_ application: UIKit.UIApplication, didReceiveRemoteNotification userInfo: [Swift.AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIKit.UIBackgroundFetchResult) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) open func on_messaging(didReceiveRegistrationToken fcmToken: Swift.String?)
+  @_Concurrency.MainActor(unsafe) open func on_application(_ application: UIKit.UIApplication, didReceiveRemoteNotification userInfo: [Swift.AnyHashable : Any])
+  @_Concurrency.MainActor(unsafe) open func on_application(_ application: UIKit.UIApplication, didReceiveRemoteNotification userInfo: [Swift.AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIKit.UIBackgroundFetchResult) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @objc deinit
+}
+extension UnbluFirebaseNotificationModule.UnbluFirebaseUIApplicationDelegate : UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinatorDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func unbluFirebaseNotificationCoordinator(_ unbluFirebaseNotificationCoordinator: UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinator, didReceiveRegistrationToken token: Swift.String?)
+}

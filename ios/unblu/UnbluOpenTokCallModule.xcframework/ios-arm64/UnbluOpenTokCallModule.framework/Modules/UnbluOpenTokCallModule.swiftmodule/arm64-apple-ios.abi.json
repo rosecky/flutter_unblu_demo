@@ -1,0 +1,122 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "OpenTok",
+        "printedName": "OpenTok",
+        "declKind": "Import",
+        "moduleName": "UnbluOpenTokCallModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UnbluCoreSDK",
+        "printedName": "UnbluCoreSDK",
+        "declKind": "Import",
+        "moduleName": "UnbluOpenTokCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnbluOpenTokCallModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UnbluOpenTokCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "OpenTok",
+        "printedName": "OpenTok",
+        "declKind": "Import",
+        "moduleName": "UnbluOpenTokCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "UnbluCoreSDK",
+        "printedName": "UnbluCoreSDK",
+        "declKind": "Import",
+        "moduleName": "UnbluOpenTokCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "UnbluOpenTokCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "OpenTok",
+        "printedName": "OpenTok",
+        "declKind": "Import",
+        "moduleName": "UnbluOpenTokCallModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UnbluCoreSDK",
+        "printedName": "UnbluCoreSDK",
+        "declKind": "Import",
+        "moduleName": "UnbluOpenTokCallModule"
+      },
+      {
+        "kind": "Import",
+        "name": "OpenTok",
+        "printedName": "OpenTok",
+        "declKind": "Import",
+        "moduleName": "UnbluOpenTokCallModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluOpenTokCallModule\/com.unblu.unblu-call-module\/internal\/provider\/TokBoxPublisherDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 205,
+      "length": 23,
+      "value": "\"UnbluOpenTokCallModule.TokBoxPublisherDelegate\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluOpenTokCallModule\/com.unblu.unblu-call-module\/internal\/provider\/OpenTokProvider.swift",
+      "kind": "Dictionary",
+      "offset": 597,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluOpenTokCallModule\/com.unblu.unblu-call-module\/internal\/provider\/OpenTokProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 687,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/workspace\/workspace\/omponents_mobile_sdk-ios_develop\/UnbluOpenTokCallModule\/com.unblu.unblu-call-module\/internal\/provider\/OpenTokProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 287,
+      "length": 15,
+      "value": "\"UnbluOpenTokCallModule.OpenTokProvider\""
+    }
+  ]
+}

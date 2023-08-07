@@ -1,0 +1,1321 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UnbluCoreSDK",
+        "printedName": "UnbluCoreSDK",
+        "declKind": "Import",
+        "moduleName": "UnbluFirebaseNotificationModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FirebaseCore",
+        "printedName": "FirebaseCore",
+        "declKind": "Import",
+        "moduleName": "UnbluFirebaseNotificationModule"
+      },
+      {
+        "kind": "Import",
+        "name": "FirebaseMessaging",
+        "printedName": "FirebaseMessaging",
+        "declKind": "Import",
+        "moduleName": "UnbluFirebaseNotificationModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnbluFirebaseNotificationCoordinatorDelegate",
+        "printedName": "UnbluFirebaseNotificationCoordinatorDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "unbluFirebaseNotificationCoordinator",
+            "printedName": "unbluFirebaseNotificationCoordinator(_:didReceiveRegistrationToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnbluFirebaseNotificationCoordinator",
+                "printedName": "UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinator",
+                "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseNotificationCoordinator"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluFirebaseNotificationModule@objc(pl)UnbluFirebaseNotificationCoordinatorDelegate(im)unbluFirebaseNotificationCoordinator:didReceiveRegistrationToken:",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0abC19CoordinatorDelegateP05unblubcE0_27didReceiveRegistrationTokenyAA0abcE0C_SSSgtF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinatorDelegate>",
+            "sugared_genericSig": "<Self where Self : UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinatorDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@UnbluFirebaseNotificationModule@objc(pl)UnbluFirebaseNotificationCoordinatorDelegate",
+        "mangledName": "$s31UnbluFirebaseNotificationModule0abC19CoordinatorDelegateP",
+        "moduleName": "UnbluFirebaseNotificationModule",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnbluFirebaseNotificationCoordinator",
+        "printedName": "UnbluFirebaseNotificationCoordinator",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinatorDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:31UnbluFirebaseNotificationModule0abC11CoordinatorC8delegateAA0abcE8Delegate_pSgvp",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0abC11CoordinatorC8delegateAA0abcE8Delegate_pSgvp",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinatorDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnbluFirebaseNotificationCoordinatorDelegate",
+                        "printedName": "UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinatorDelegate",
+                        "usr": "c:@M@UnbluFirebaseNotificationModule@objc(pl)UnbluFirebaseNotificationCoordinatorDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:31UnbluFirebaseNotificationModule0abC11CoordinatorC8delegateAA0abcE8Delegate_pSgvg",
+                "mangledName": "$s31UnbluFirebaseNotificationModule0abC11CoordinatorC8delegateAA0abcE8Delegate_pSgvg",
+                "moduleName": "UnbluFirebaseNotificationModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinatorDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnbluFirebaseNotificationCoordinatorDelegate",
+                        "printedName": "UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinatorDelegate",
+                        "usr": "c:@M@UnbluFirebaseNotificationModule@objc(pl)UnbluFirebaseNotificationCoordinatorDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:31UnbluFirebaseNotificationModule0abC11CoordinatorC8delegateAA0abcE8Delegate_pSgvs",
+                "mangledName": "$s31UnbluFirebaseNotificationModule0abC11CoordinatorC8delegateAA0abcE8Delegate_pSgvs",
+                "moduleName": "UnbluFirebaseNotificationModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:31UnbluFirebaseNotificationModule0abC11CoordinatorC8delegateAA0abcE8Delegate_pSgvM",
+                "mangledName": "$s31UnbluFirebaseNotificationModule0abC11CoordinatorC8delegateAA0abcE8Delegate_pSgvM",
+                "moduleName": "UnbluFirebaseNotificationModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnbluFirebaseNotificationCoordinator",
+                "printedName": "UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinator",
+                "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseNotificationCoordinator"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseNotificationCoordinator(im)init",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0abC11CoordinatorCACycfc",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Convenience",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "handleInitialRemoteNotification",
+            "printedName": "handleInitialRemoteNotification(userInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:31UnbluFirebaseNotificationModule0abC11CoordinatorC019handleInitialRemoteC08userInfoySDys11AnyHashableVypGSg_tKF",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0abC11CoordinatorC019handleInitialRemoteC08userInfoySDys11AnyHashableVypGSg_tKF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleRemoteNotification",
+            "printedName": "handleRemoteNotification(userInfo:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIBackgroundFetchResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIBackgroundFetchResult",
+                    "printedName": "UIKit.UIBackgroundFetchResult",
+                    "usr": "c:@E@UIBackgroundFetchResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:31UnbluFirebaseNotificationModule0abC11CoordinatorC012handleRemoteC08userInfo17completionHandlerySDys11AnyHashableVypG_ySo23UIBackgroundFetchResultVctKF",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0abC11CoordinatorC012handleRemoteC08userInfo17completionHandlerySDys11AnyHashableVypG_ySo23UIBackgroundFetchResultVctKF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleRemoteNotification",
+            "printedName": "handleRemoteNotification(userInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:31UnbluFirebaseNotificationModule0abC11CoordinatorC012handleRemoteC08userInfoySDys11AnyHashableVypG_tKF",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0abC11CoordinatorC012handleRemoteC08userInfoySDys11AnyHashableVypG_tKF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "failedToRegisterForRemoteNotifications",
+            "printedName": "failedToRegisterForRemoteNotifications(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:31UnbluFirebaseNotificationModule0abC11CoordinatorC38failedToRegisterForRemoteNotifications5errorys5Error_p_tF",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0abC11CoordinatorC38failedToRegisterForRemoteNotifications5errorys5Error_p_tF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDeviceToken",
+            "printedName": "setDeviceToken(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:31UnbluFirebaseNotificationModule0abC11CoordinatorC14setDeviceTokenyySSSgF",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0abC11CoordinatorC14setDeviceTokenyySSSgF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "messaging",
+            "printedName": "messaging(_:didReceiveRegistrationToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Messaging",
+                "printedName": "FirebaseMessaging.Messaging",
+                "usr": "c:objc(cs)FIRMessaging"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseNotificationCoordinator(im)messaging:didReceiveRegistrationToken:",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0abC11CoordinatorC9messaging_27didReceiveRegistrationTokenySo12FIRMessagingC_SSSgtF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "objc_name": "messaging:didReceiveRegistrationToken:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseNotificationCoordinator",
+        "mangledName": "$s31UnbluFirebaseNotificationModule0abC11CoordinatorC",
+        "moduleName": "UnbluFirebaseNotificationModule",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnbluFirebaseNotificationModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FirebaseMessaging",
+        "printedName": "FirebaseMessaging",
+        "declKind": "Import",
+        "moduleName": "UnbluFirebaseNotificationModule"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UnbluFirebaseNotificationModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "UnbluFirebaseNotificationModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnbluFirebaseNotificationModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnbluFirebaseUIApplicationDelegate",
+        "printedName": "UnbluFirebaseUIApplicationDelegate",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "window",
+            "printedName": "window",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseUIApplicationDelegate(py)window",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC6windowSo8UIWindowCSgvp",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "objc_name": "window",
+            "declAttributes": [
+              "HasInitialValue",
+              "ObjC",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIWindow?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIWindow",
+                        "printedName": "UIKit.UIWindow",
+                        "usr": "c:objc(cs)UIWindow"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseUIApplicationDelegate(im)window",
+                "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC6windowSo8UIWindowCSgvg",
+                "moduleName": "UnbluFirebaseNotificationModule",
+                "implicit": true,
+                "objc_name": "window",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIWindow?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIWindow",
+                        "printedName": "UIKit.UIWindow",
+                        "usr": "c:objc(cs)UIWindow"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseUIApplicationDelegate(im)setWindow:",
+                "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC6windowSo8UIWindowCSgvs",
+                "moduleName": "UnbluFirebaseNotificationModule",
+                "implicit": true,
+                "objc_name": "setWindow:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC6windowSo8UIWindowCSgvM",
+                "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC6windowSo8UIWindowCSgvM",
+                "moduleName": "UnbluFirebaseNotificationModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "application",
+            "printedName": "application(_:didFinishLaunchingWithOptions:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LaunchOptionsKey",
+                        "printedName": "UIKit.UIApplication.LaunchOptionsKey",
+                        "usr": "c:@T@UIApplicationLaunchOptionsKey"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseUIApplicationDelegate(im)application:didFinishLaunchingWithOptions:",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC11application_29didFinishLaunchingWithOptionsSbSo0E0C_SDySo0e6LaunchL3KeyaypGSgtF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "isOpen": true,
+            "objc_name": "application:didFinishLaunchingWithOptions:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "application",
+            "printedName": "application(_:didFailToRegisterForRemoteNotificationsWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseUIApplicationDelegate(im)application:didFailToRegisterForRemoteNotificationsWithError:",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC11application_48didFailToRegisterForRemoteNotificationsWithErrorySo0E0C_s0P0_ptF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "isOpen": true,
+            "objc_name": "application:didFailToRegisterForRemoteNotificationsWithError:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "application",
+            "printedName": "application(_:didReceiveRemoteNotification:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseUIApplicationDelegate(im)application:didReceiveRemoteNotification:",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC11application_016didReceiveRemoteC0ySo0E0C_SDys11AnyHashableVypGtF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "objc_name": "application:didReceiveRemoteNotification:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "application",
+            "printedName": "application(_:didReceiveRemoteNotification:fetchCompletionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIBackgroundFetchResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIBackgroundFetchResult",
+                    "printedName": "UIKit.UIBackgroundFetchResult",
+                    "usr": "c:@E@UIBackgroundFetchResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseUIApplicationDelegate(im)application:didReceiveRemoteNotification:fetchCompletionHandler:",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC11application_016didReceiveRemoteC022fetchCompletionHandlerySo0E0C_SDys11AnyHashableVypGySo23UIBackgroundFetchResultVctF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "objc_name": "application:didReceiveRemoteNotification:fetchCompletionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "on_messaging",
+            "printedName": "on_messaging(didReceiveRegistrationToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC12on_messaging27didReceiveRegistrationTokenySSSg_tF",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC12on_messaging27didReceiveRegistrationTokenySSSg_tF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "on_application",
+            "printedName": "on_application(_:didReceiveRemoteNotification:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC14on_application_016didReceiveRemoteC0ySo0E0C_SDys11AnyHashableVypGtF",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC14on_application_016didReceiveRemoteC0ySo0E0C_SDys11AnyHashableVypGtF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "on_application",
+            "printedName": "on_application(_:didReceiveRemoteNotification:fetchCompletionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIBackgroundFetchResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIBackgroundFetchResult",
+                    "printedName": "UIKit.UIBackgroundFetchResult",
+                    "usr": "c:@E@UIBackgroundFetchResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC14on_application_016didReceiveRemoteC022fetchCompletionHandlerySo0E0C_SDys11AnyHashableVypGySo23UIBackgroundFetchResultVctF",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC14on_application_016didReceiveRemoteC022fetchCompletionHandlerySo0E0C_SDys11AnyHashableVypGySo23UIBackgroundFetchResultVctF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnbluFirebaseUIApplicationDelegate",
+                "printedName": "UnbluFirebaseNotificationModule.UnbluFirebaseUIApplicationDelegate",
+                "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseUIApplicationDelegate"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseUIApplicationDelegate(im)init",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateCACycfc",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "unbluFirebaseNotificationCoordinator",
+            "printedName": "unbluFirebaseNotificationCoordinator(_:didReceiveRegistrationToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnbluFirebaseNotificationCoordinator",
+                "printedName": "UnbluFirebaseNotificationModule.UnbluFirebaseNotificationCoordinator",
+                "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseNotificationCoordinator"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseUIApplicationDelegate(im)unbluFirebaseNotificationCoordinator:didReceiveRegistrationToken:",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC05unblubC11Coordinator_27didReceiveRegistrationTokenyAA0abcH0C_SSSgtF",
+            "moduleName": "UnbluFirebaseNotificationModule",
+            "objc_name": "unbluFirebaseNotificationCoordinator:didReceiveRegistrationToken:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@UnbluFirebaseNotificationModule@objc(cs)UnbluFirebaseUIApplicationDelegate",
+        "mangledName": "$s31UnbluFirebaseNotificationModule0aB21UIApplicationDelegateC",
+        "moduleName": "UnbluFirebaseNotificationModule",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UnbluFirebaseNotificationCoordinatorDelegate",
+            "printedName": "UnbluFirebaseNotificationCoordinatorDelegate",
+            "usr": "c:@M@UnbluFirebaseNotificationModule@objc(pl)UnbluFirebaseNotificationCoordinatorDelegate",
+            "mangledName": "$s31UnbluFirebaseNotificationModule0abC19CoordinatorDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UNUserNotificationCenter",
+        "printedName": "UNUserNotificationCenter",
+        "declKind": "Class",
+        "usr": "c:objc(cs)UNUserNotificationCenter",
+        "moduleName": "UserNotifications",
+        "isOpen": true,
+        "intro_iOS": "10.0",
+        "objc_name": "UNUserNotificationCenter",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
