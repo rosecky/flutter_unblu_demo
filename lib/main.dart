@@ -1,7 +1,5 @@
-import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_unblu_demo/pigeon.dart';
 import 'package:flutter_unblu_demo/unblu_view.dart';
 
@@ -26,7 +24,7 @@ class MainApp extends StatelessWidget {
 
           final Map<String, String> args = {};
 
-          return MaterialApp(
+          return const MaterialApp(
             home: Scaffold(
               body: Stack(
                 children: <Widget>[UnbluView()],
@@ -35,7 +33,7 @@ class MainApp extends StatelessWidget {
           );
         } else {
           // While waiting for the future to complete, you can return a loader.
-          return CircularProgressIndicator();
+          return const CircularProgressIndicator();
         }
       },
     );

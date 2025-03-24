@@ -24,131 +24,134 @@ import io.reactivex.rxjava3.subjects.BehaviorSubject
 import java.util.*
 import com.unblu.sdk.module.call.CallModuleProvider as VonageModule
 
-class UnbluSingleton {
-    companion object {
+object UnbluSingleton {
 
-        internal var customCookies: MutableMap<String, String> = hashMapOf()
-        internal var accessToken: String? = null
-        lateinit var unbluHostToFlutterApiService: Pigeon.UnbluVisitorHostToFlutterApi
+    internal var customCookies: MutableMap<String, String> = hashMapOf()
+    internal var accessToken: String? = null
+    lateinit var unbluHostToFlutterApiService: Pigeon.UnbluVisitorHostToFlutterApi
 
-        //Store uiShowRequests as you may receive them when you don't have a client running
-        //or the Unblu Ui isn't attached
-        private var onUiShowRequest = BehaviorSubject.createDefault(false)
-        var visitorClient: UnbluVisitorClient? = null
-        private lateinit var callModule: CallModule
-        private lateinit var coBrowsingModule: MobileCoBrowsingModule
-        private var unbluNotificationApi: UnbluNotificationApi =
-            UnbluNotificationApi.createNotificationApi()
+    //Store uiShowRequests as you may receive them when you don't have a client running
+    //or the Unblu Ui isn't attached
+    private var onUiShowRequest = BehaviorSubject.createDefault(false)
+    var visitorClient: UnbluVisitorClient? = null
+    private lateinit var callModule: CallModule
+    private lateinit var coBrowsingModule: MobileCoBrowsingModule
+    private var unbluNotificationApi: UnbluNotificationApi =
+        UnbluNotificationApi.createNotificationApi()
 
-        lateinit var unbluPreferencesStorage: UnbluPreferencesStorage
+    lateinit var unbluPreferencesStorage: UnbluPreferencesStorage
+    val conversationOpen = BehaviorSubject.createDefault(false)
 
-        init {
+    init {
 
+    }
+
+    fun start(
+        uApplication: Application,
+        activity: Activity,
+        successVoidCallback: InitializeSuccessCallback<UnbluVisitorClient>,
+        deinitializeExceptionCallback: InitializeExceptionCallback
+    ) {
+        createClient(uApplication, activity, successVoidCallback, deinitializeExceptionCallback)
+    }
+
+    private fun createClient(
+        uApplication: Application,
+        activity: Activity,
+        successCallback: InitializeSuccessCallback<UnbluVisitorClient>,
+        initializeExceptionCallback: InitializeExceptionCallback
+    ) {
+        val unbluClientConfiguration = createUnbluClientConfiguration(uApplication)
+        if (unbluClientConfiguration == null) {
+            initializeExceptionCallback.onConfigureNotCalled()
+            return
         }
+        Unblu.createVisitorClient(
+            uApplication,
+            activity,
+            unbluClientConfiguration,
+            unbluNotificationApi,
+            { client ->
+                client.openConversation
+                    .map { it.isPresent }
+                    .subscribe(conversationOpen::onNext)
+                client.setModalViewEnabled(true)
+                successCallback.onSuccess(client)
+                visitorClient = client
+            },
+            initializeExceptionCallback
+        )
+    }
 
-        fun start(
-            uApplication: Application,
-            activity: Activity,
-            successVoidCallback: InitializeSuccessCallback<UnbluVisitorClient>,
-            deinitializeExceptionCallback: InitializeExceptionCallback
-        ) {
-            //create your Visitor Client Instance
-            createClient(uApplication, activity, successVoidCallback, deinitializeExceptionCallback)
-        }
-
-        private fun createClient(
-            uApplication: Application,
-            activity: Activity,
-            successCallback: InitializeSuccessCallback<UnbluVisitorClient>,
-            initializeExceptionCallback: InitializeExceptionCallback
-        ) {
-            val unbluClientConfiguration = createUnbluClientConfiguration(uApplication)
-            if (unbluClientConfiguration == null) {
-                initializeExceptionCallback.onConfigureNotCalled()
-                return
-            }
-            Unblu.createVisitorClient(
-                uApplication,
-                activity,
-                unbluClientConfiguration,
-                unbluNotificationApi,
-                {
-                    visitorClient = it
-                    successCallback.onSuccess(it)
-                },
-                initializeExceptionCallback
-            )
-        }
-
-        private fun createUnbluClientConfiguration(uApplication: Application): UnbluClientConfiguration? {
-            val url = ""
-            val apiKey = ""
-            callModule = CallModuleProviderFactory.createDynamic(
-                VonageModule.createForDynamic(),
-                LiveKitModuleProvider.createForDynamic()
-            )
-            coBrowsingModule = MobileCoBrowsingModuleProvider.create()
-            val builder = UnbluClientConfiguration.Builder(
-                url,
-                apiKey,
-                unbluPreferencesStorage,
-                UnbluDownloadHandler.createExternalStorageDownloadHandler(uApplication),
-                UnbluPatternMatchingExternalLinkHandler()
-            )
-                .setCameraUploadsEnabled(true)
-                .setPhotoUploadsEnabled(true)
-                .registerModule(callModule)
-                .registerModule(coBrowsingModule)
+    private fun createUnbluClientConfiguration(uApplication: Application): UnbluClientConfiguration? {
+        val url = "https://jan-unblu8-sandbox.dev.unblu-test.com"
+        val apiKey = "MZsy5sFESYqU7MawXZgR_w"
+        callModule = CallModuleProviderFactory.createDynamic(
+            VonageModule.createForDynamic(),
+            LiveKitModuleProvider.createForDynamic()
+        )
+        coBrowsingModule = MobileCoBrowsingModuleProvider.create()
+        val builder = UnbluClientConfiguration.Builder(
+            url,
+            apiKey,
+            unbluPreferencesStorage,
+            UnbluDownloadHandler.createExternalStorageDownloadHandler(uApplication),
+            UnbluPatternMatchingExternalLinkHandler()
+        )
+            .setCameraUploadsEnabled(true)
+            .setVideoUploadsEnabled(true)
+            .setPhotoUploadsEnabled(true)
+            .registerModule(callModule)
+            .registerModule(coBrowsingModule)
             if (!accessToken.isNullOrEmpty())
                 builder.setAccessToken(accessToken!!)
             if (customCookies.isNotEmpty())
                 builder.setCustomCookies(UnbluCookie.from(customCookies))
-            return builder.build()
-        }
+        return builder.build()
+    }
 
-        fun getClient(): UnbluVisitorClient? {
-            return if (Objects.isNull(visitorClient) || (visitorClient!!.isDeInitialized)) null else visitorClient
-        }
+    fun getClient(): UnbluVisitorClient? {
+        return if (Objects.isNull(visitorClient) || (visitorClient!!.isDeInitialized)) null else visitorClient
+    }
 
-        fun getCallModule(): CallModule {
-            return callModule
-        }
+    fun getCallModule(): CallModule {
+        return callModule
+    }
 
-        fun getCoBrowsingModule(): MobileCoBrowsingModule {
-            return coBrowsingModule
-        }
+    fun getCoBrowsingModule(): MobileCoBrowsingModule {
+        return coBrowsingModule
+    }
 
-        fun getUnbluUi(): View? {
-            return visitorClient?.mainView
-        }
+    fun getUnbluUi(): View? {
+        return visitorClient?.mainView
+    }
 
-        fun setRequestedUiShow() {
-            onUiShowRequest.onNext(true)
-        }
+    fun setRequestedUiShow() {
+        onUiShowRequest.onNext(true)
+    }
 
-        fun hasUiShowRequest(): Observable<Boolean> {
-            return onUiShowRequest
-        }
+    fun hasUiShowRequest(): Observable<Boolean> {
+        return onUiShowRequest
+    }
 
-        fun getHasUiShowRequestValue(): Boolean {
-            return onUiShowRequest.value!!
-        }
+    fun getHasUiShowRequestValue(): Boolean {
+        return onUiShowRequest.value!!
+    }
 
 
-        fun clearUiShowRequest() {
-            onUiShowRequest.onNext(false)
-        }
+    fun clearUiShowRequest() {
+        onUiShowRequest.onNext(false)
+    }
 
-        fun getHasUiShowRequestValueAndReset(): Boolean {
-            val showUiVal = onUiShowRequest.value!!
-            clearUiShowRequest()
-            return showUiVal
-        }
+    fun getHasUiShowRequestValueAndReset(): Boolean {
+        val showUiVal = onUiShowRequest.value!!
+        clearUiShowRequest()
+        return showUiVal
+    }
 
-        fun attachFlutterApi(
-            unbluHostToFlutterApiService: Pigeon.UnbluVisitorHostToFlutterApi
-        ) {
-            this.unbluHostToFlutterApiService = unbluHostToFlutterApiService
-        }
+    fun attachFlutterApi(
+        unbluHostToFlutterApiService: Pigeon.UnbluVisitorHostToFlutterApi
+    ) {
+        this.unbluHostToFlutterApiService = unbluHostToFlutterApiService
     }
 }

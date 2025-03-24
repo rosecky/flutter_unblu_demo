@@ -6,6 +6,8 @@ import 'package:flutter/services.dart';
 class UnbluView extends StatelessWidget {
   static const StandardMessageCodec _decoder = StandardMessageCodec();
 
+  const UnbluView({super.key});
+
   @override
   Widget build(BuildContext context) {
     final Map<String, String> args = {};

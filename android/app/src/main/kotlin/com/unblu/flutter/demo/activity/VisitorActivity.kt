@@ -8,13 +8,14 @@ import com.unblu.sdk.core.Unblu
 import com.unblu.sdk.core.application.UnbluApplication
 import com.unblu.sdk.core.visitor.UnbluVisitorClient
 import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.schedulers.Schedulers
 import timber.log.Timber
 
-abstract class VisitorActivity : FlutterActivity() {
+abstract class VisitorActivity : FlutterFragmentActivity() {
     protected var globalResources = CompositeDisposable()
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
@@ -49,7 +50,9 @@ abstract class VisitorActivity : FlutterActivity() {
             Unblu
                 .onVisitorInitialized()
                 .subscribe { visitorClient ->
-                    UnbluSingleton.unbluHostToFlutterApiService.onVisitorInitChanged(true){ }
+                    runOnUiThread {
+                        UnbluSingleton.unbluHostToFlutterApiService.onVisitorInitChanged(true){ }
+                    }
                 },
             Unblu.onUiHideRequest()
                 .subscribeOn(Schedulers.io())
