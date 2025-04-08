@@ -26,6 +26,9 @@ import com.unblu.sdk.module.call.CallModuleProvider as VonageModule
 
 object UnbluSingleton {
 
+    private const val unbluEnvironmentUrl = "https://jan-unblu8-sandbox.dev.unblu-test.com"
+    private const val unbluApiKey = "MZsy5sFESYqU7MawXZgR_w"
+    
     internal var customCookies: MutableMap<String, String> = hashMapOf()
     internal var accessToken: String? = null
     lateinit var unbluHostToFlutterApiService: Pigeon.UnbluVisitorHostToFlutterApi
@@ -84,8 +87,8 @@ object UnbluSingleton {
     }
 
     private fun createUnbluClientConfiguration(uApplication: Application): UnbluClientConfiguration? {
-        val url = "https://jan-unblu8-sandbox.dev.unblu-test.com"
-        val apiKey = "MZsy5sFESYqU7MawXZgR_w"
+        val url = unbluEnvironmentUrl
+        val apiKey = unbluApiKey
         callModule = CallModuleProviderFactory.createDynamic(
             VonageModule.createForDynamic(),
             LiveKitModuleProvider.createForDynamic()
